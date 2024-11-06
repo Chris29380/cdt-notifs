@@ -6,6 +6,7 @@ games        {'gta5'}
 
 author 'cdtdevfivem'
 description 'Notification system management'
+version '1.0.0'
 
 dependencies {
     'cdt-lib',
@@ -13,7 +14,6 @@ dependencies {
 
 shared_scripts {
     '@es_extended/imports.lua',
-    '@ox_lib/init.lua',
     'shared/*.lua'
 }
     
@@ -32,5 +32,5 @@ files {
 	'html/index.html',
 	'html/js/script.js',
 	'html/css/style.css',
-    'html/img/logo.png',
+    'html/img/*.png',
 }
