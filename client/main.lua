@@ -94,16 +94,13 @@ AddEventHandler("cdtnotifs:notificationpush", function (type, msg, timer, id)
     timerN = timer or timerD
 
     if notiftable and #notiftable > 0 then
-        print("#notiftable "..#notiftable)
         while #notiftable >= 5 do
             Wait(500)
         end
         table.insert(notiftable, {idn = idnotif})
-        print('notiftable '..json.encode(notiftable))
         showNotif(typeN,msg,timerN,idnotif)
     else
         table.insert(notiftable, {idn = idnotif})
-        print('notiftable '..json.encode(notiftable))
         showNotif(typeN,msg,timerN,idnotif)
     end
 end)
@@ -137,7 +134,6 @@ RegisterNuiCallback("delnotifidn", function (data)
     else
         print("no notiftable")
     end
-    print('notiftable '..json.encode(notiftable))
 end)
 
 exports('showNotification', function(type,msg,timer,id)

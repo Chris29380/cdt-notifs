@@ -10,8 +10,6 @@ window.addEventListener('message', function(event) {
 		timer = event.data.timer
 		idn = event.data.idn
 		showNotification()
-
-		console.log("idn "+idn)
 		
     }
 })
@@ -63,6 +61,5 @@ function showNotification() {
 }
 
 function delnotifid(idnotif) {
-	console.log("idnotif "+idnotif)
 	$.post(`https://${GetParentResourceName()}/delnotifidn`, JSON.stringify({idnotif}))
 }
