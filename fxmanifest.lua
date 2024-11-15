@@ -1,3 +1,8 @@
+-- [[ Discord ]]---------------------------------------
+-- If u have any questions, u can join CDT Discord
+-- https://discord.gg/ae2jAmtQsm
+-------------------------------------------------------
+
 --[[ Manifest ]]--
 fx_version   'cerulean'
 use_experimental_fxv2_oal 'no'
